@@ -6,17 +6,18 @@ void enternumber(long[], int);
 
 int main()
 {
-  int size;
-  int numbers5=0;
+  
+  int size;//var to hold the size of the freq table
+  int numbers5=0;//var to hold how many numbers have a freq of 5
 
-  cout << "How many numbers?  ";
-  cin >>size;
+  cout << "How many numbers?  ";//print out to get size of table
+  cin >>size;//read in input on the size and put it in size
 
-  long enteredNumbers[10000];
-  long frequencyArray[10000];
+  long enteredNumbers[10000];//initialize enterednumbers array
+  long frequencyArray[10000];//initialize freq table array
 
-  enternumber(enteredNumbers,size);
-
+  enternumber(enteredNumbers,size);//call enternumb func passing entnumbers array and size
+  //for loop to fill up the freq table
   for (int x=0; x<size; x++)
   {
     if (enteredNumbers[x]  == enteredNumbers[x] )
